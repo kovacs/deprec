@@ -1,0 +1,3 @@
+To fix this we need to customize the mongrel.rb recipe to set permissions on /public so that engines can make the plugin_assets dir. This caused a change to .caprc
+to point to the customized version of deprec so that we aren't changing gem files. Perhaps I can load a monkey patch in the deploy.rb file instead and use the gem?
+
